@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Assignment</title>
+</head>
+<body>
+    <marquee behavior="" direction="" style="font-size: 80; font-family: 'Courier New', Courier, monospace;">Grading System with JavaScript</marquee>
+    <input type="text" id="myScore">
+    <button onclick="grade()">Grade</button>
+    <p style="color: red; font-size: 60px;" id="result"></p>
+    <script>
+        
+        function grade () {
+            var score = myScore.value;
+                if (score < 0 || score > 100) {
+                    result.innerHTML = "Out of range!";
+                } else if (score <= 39) {
+                    result.innerText = "Fail!";
+                } else if (score <= 44) {
+                    result.innerText = "Pass!";
+                } else if (score <= 49) {
+                    result.innerText = "Fair";
+                } else if (score <= 59) {
+                    result.innerText = "Average!";
+                } else if (score <= 69) {
+                    result.innerText = "Good!";
+                } else if (score <= 100) {
+                    result.innerText = "Excellent!";
+                } else {
+                    result.innerText = "Bad Input!";
+            }
+        }
+    </script>
+    
+</body>
+</html>

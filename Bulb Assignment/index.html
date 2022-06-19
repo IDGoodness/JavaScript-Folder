@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBulb</title>
+</head>
+<body>
+    <marquee behavior="" direction="" style="font-size: 70; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Light Bulb</marquee>
+    
+<div style="text-align: center;">
+    <img src="lb1.gif" alt="" id="Bulb"> <br>
+    <button onclick="son()">On</button>
+    <button onclick="soff()">Off</button>
+</div>
+
+    <script>
+
+        function son () {
+            var image = document.getElementById("Bulb");
+                if (image.src.match("lb2.gif")) {
+                    image.src = "lb2.gif";
+                } else {
+                    image.src = "lb2.gif";
+            }
+        }
+
+        function soff() {
+            var image = document.getElementById("Bulb");
+                if (image.src.match("lib1.gif")) {
+                    image.src = "lb1.gif";
+                } else {
+                    image.src = "lb1.gif";
+            }
+            
+        }
+
+    </script>
+
+
+    <marquee behavior="" direction="" style="font-size: 70; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Made by Goodness Adewuyi</marquee>
+
+</body>
+</html>

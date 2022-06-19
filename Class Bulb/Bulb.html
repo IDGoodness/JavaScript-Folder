@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <img src="lb1.gif" alt="" id="img">
+    <button onclick="onBulb ()" id="btn">ON</button>
+
+    <script>
+
+        function onBulb () {
+            if (btn.innerText == "ON") {
+                btn.innerText = "OFF";
+                img.src = "lb2.gif";
+            } else {
+                btn.innerText = "ON";
+                img.src = "lb1.gif";
+            }
+        }
+    </script>
+
+</body>
+</html>

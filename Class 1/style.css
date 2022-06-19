@@ -1,0 +1,16 @@
+body {
+    background-color: wheat;
+}
+
+div {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+p {
+    font-size: 50;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: orange;
+    text-align: center;
+}
